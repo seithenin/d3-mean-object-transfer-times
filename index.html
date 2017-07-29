@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thesis Charts</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/thesis-charts-style.css">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <meta name="author" content="Steve Sutcliffe">
+  
+</head>
+<body>
+
+<h2>Thesis Charts</h2>
+<p><i>Charts reproducing my thesis work using d3</i></p>
+
+<div class="container">
+
+  <div id="chart-one-pair-transfer-times"><span class="description"><h4>D3 Generated Chart:</h4></span>
+  </div>
+
+  <div class="description">
+   <h3>Transfer Times One Pair</h3>
+  <h4>Objective</h4>
+  <p>Determine the technique with the fastest transfer times</p>
+  <h4>Description:</h4>
+  <p><i>Details of this study and each technique available from my publication available at ACM's Digital Library: doi&gt;<a href="http://dl.acm.org/citation.cfm?doid=2470654.2470758" target="_blank">10.1145/2470654.2470758</a>
+  </i></p>
+    
+  <h4>Chart Creation Details:</h4>
+  <ul>
+    <li>Built using D3, a JavaScript library for visualizing data</li>
+    <li>Multiple datasets imported and processed</li>
+    <li>Implemented error bars (not natively supported)</li>
+    <li>Implemented offset tick marks (not natively supported)</li>
+    <li>Chart factory created to quickly produce all charts</li>
+  </ul>
+  </div>
+</div>
+
+<div class="container">
+  <div id="chart-two-pair-transfer-times"><span class="description"><h4>D3 Generated Chart:</h4></span>
+  </div>
+
+  <div class="description">
+    <h3>Transfer Times Two Pair</h3>
+    <h4>Objective</h4>
+     <p>Determine the technique with the fastest transfer times</p>
+
+    <p><i>Original excel chart for comparison:</i></p>
+    <img src="/images/TransferTimes2Pair_500x330.png" height="330" width="500" />
+  </div>
+</div>
+
+
+<div class="container">
+  <div id="chart-mean-accidental-handoff"><span class="description"><h4>D3 Generated Chart:</h4></span>
+  </div>
+
+  <div class="description">
+  <h3>Mean Accidental Handoff Two Pair</h3>
+  <h4>Objective</h4>
+  <p>Determine the technique with the most and least number of accidental handoffs</p>
+     <p><i>Original excel chart for comparison:</i></p>
+    <img src="/images/MeanAccidentalHandoff2Pair_500x330.png" height="330" width="500" />
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div id="chart-mean-tlx-responses-one-pair"><span class="description"><h4>D3 Generated Chart:</h4></span>
+  </div>
+
+  <div class="description">
+    <h3>TLX Responses One Pair</h3>
+    <h4>Objective</h4>
+    <p>Determine the perceived "effort" of each technique</p>
+
+    <p><i>Original excel chart for comparison:</i></p>
+    <img src="/images/MeanTLXResponses1Pair_500x330.png" height="330" width="500" />
+  </div>
+
+</div>
+
+<div class="container">
+  <div id="chart-mean-tlx-responses-two-pair"><span class="description"><h4>D3 Generated Chart:</h4></span>
+  </div>
+
+  <div class="description">
+    <h3>TLS Responses Two Pair</h3>
+    <h4>Objective</h4>
+    <p>Determine the perceived "effort" of each technique</p>
+    <p><i>Original excel chart for comparison:</i></p>
+    <img src="/images/MeanTLXResponses2Pair_500x330.png" height="330" width="500" />
+  </div>
+</div>
+
+<div class="container">
+  
+  <div id="chart-preferences-one-pair">
+    <span class="description"><h4>D3 Generated Chart:</h4></span>
+  </div>
+
+  <div class="description">
+    <h3>Preferences One Pair</h3>
+    <h4>Objective</h4>
+    <p>Determine the preference of each technique. The Higher the value the more the technique is preferred</p>
+    <p><i>Original excel chart for comparison:</i></p>
+    <img src="/images/MedianSubjectiveRank1Pair_500x330.png" height="330" width="500" />
+  </div>
+</div>
+
+<div class="container">
+
+    <div id="chart-preferences-two-pair">
+      <span class="description"><h4>D3 Generated Chart:</h4></span>
+    </div>
+
+    <div class="description">
+      <h3>Preferences Two Pair</h3>
+      <h4>Objective</h4>
+      <p>Determine the preference of each technique. The Higher the value the more the technique is preferred</p>
+      <p><i>Original excel chart for comparison:</i></p>
+    <img src="/images/MedianSubjectiveRank2Pair_500x330.png" height="330" width="500" />
+    </div>
+</div>
+
+<script src="/js/script_thesisCharts.js"></script>
+</body>
+</html>

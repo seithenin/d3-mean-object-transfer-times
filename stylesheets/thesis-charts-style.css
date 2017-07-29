@@ -1,0 +1,92 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+h2 {
+  margin-bottom: 0px; }
+
+p {
+  margin-top: 5px; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 40px; }
+  .container .description {
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: black;
+    max-width: 600px; }
+    .container .description h3 {
+      color: #00427f;
+      font-size: 24px;
+      margin-bottom: 6px; }
+    .container .description h4 {
+      color: #00427f;
+      font-size: 18px;
+      margin-bottom: 6px; }
+    .container .description p {
+      margin-top: 2px;
+      margin-bottom: 6px;
+      font-size: 16px;
+      font-family: 'Fira Sans', sans-serif;
+      line-height: 20px; }
+    .container .description img {
+      border: 1px solid black; }
+
+svg.background {
+  background-color: #F9EFEC; }
+svg .plot-area-bg {
+  fill: #FFFFFF; }
+svg .plot-area .data-series g .one-pair {
+  fill: #4f81be; }
+svg .plot-area .data-series g:nth-last-of-type(-n+2) .one-pair {
+  fill: #00b050; }
+svg .plot-area .xAxisTickMarks {
+  stroke: #000000;
+  stroke-width: 1px; }
+svg .plot-area .error-bar {
+  stroke: #000000;
+  stroke-width: 1px; }
+svg .legend .background {
+  fill: #FFFFFF;
+  stroke: #000000;
+  stroke-width: 1px; }
+svg .axis-labels {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  fill: #1c3048; }
+  svg .axis-labels .on-surface {
+    fill: #4f81be;
+    opacity: 0.4; }
+  svg .axis-labels .above-surface {
+    fill: #00b050;
+    opacity: 0.4; }
+  svg .axis-labels .horizontal {
+    font-size: 18px; }
+    svg .axis-labels .horizontal.on-surface, svg .axis-labels .horizontal.above-surface {
+      opacity: 1;
+      fill: #1c3048; }
+  svg .axis-labels .vertical {
+    font-size: 20px; }
+  svg .axis-labels .range-text {
+    font-size: 12px; }
+  svg .axis-labels .domain-text {
+    font-size: 14px; }
+  svg .axis-labels .range-text text, svg .axis-labels .domain-text text {
+    fill: #1c3048; }
+  svg .axis-labels .tick line, svg .axis-labels .tick path {
+    stroke: #9d9d9d; }
+svg .chart-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  fill: #1c3048; }
+svg .notes {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  fill: #1c3048; }
+
+/*# sourceMappingURL=thesis-charts-style.css.map */

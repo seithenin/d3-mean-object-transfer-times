@@ -1,0 +1,173 @@
+
+$color-background: #F9EFEC;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-blue: #4f81be;
+$color-green: #00b050;
+$color-dark-blue: #1c3048;
+$color-grey: #9d9d9d;
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	margin-bottom: 0px;
+}
+
+p {
+	margin-top: 5px;
+}
+
+h3 {
+
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	margin-bottom: 40px;
+
+	.description {
+		padding-left: 20px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		color: black;
+		max-width: 600px;
+
+		h3 {
+			color: #00427f;
+			font-size: 24px;
+			margin-bottom: 6px;
+		}
+		h4 {
+			color: #00427f;
+			font-size: 18px;
+			margin-bottom: 6px;
+		}
+		p {
+			margin-top: 2px;
+			margin-bottom: 6px;
+			font-size: 16px;
+			font-family: 'Fira Sans', sans-serif;
+			line-height: 20px;
+		}
+
+		img {
+			border: 1px solid black;
+		}
+	}
+}
+
+
+svg {
+	&.background {
+		background-color: $color-background;
+	}
+
+	.plot-area-bg {
+		fill: $color-white;	
+	}
+
+	.plot-area {
+
+		// .background {
+		// 	fill: $color-white;
+		// 	stroke: black;
+		// 	stroke-width: 1px;	
+		// }
+
+		.data-series {
+			g {
+				.one-pair {
+					fill: $color-blue;
+				}				
+			}
+
+			g:nth-last-of-type(-n+2) {
+				.one-pair {
+						fill: $color-green;
+					}	
+			}
+		}
+
+		.xAxisTickMarks {
+			stroke: $color-black;
+			stroke-width: 1px;
+		}
+
+		.error-bar {
+			stroke: $color-black;
+			stroke-width: 1px;
+		}
+	}
+
+	.legend {
+		.background {
+			fill: $color-white;
+			stroke: $color-black;
+			stroke-width: 1px;		
+		}
+	}
+
+	.axis-labels {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		fill: $color-dark-blue; // svg text uses fill, not color
+		
+		.on-surface {
+			fill: $color-blue;
+			opacity: 0.4;
+		}
+
+		.above-surface {
+			fill: $color-green;
+			opacity: 0.4;
+		}
+
+		.horizontal {
+			font-size: 18px;
+
+			&.on-surface, &.above-surface {
+				opacity: 1;
+				fill: $color-dark-blue;
+			}
+		}
+
+		.vertical {
+			font-size: 20px;
+		}
+
+		.range-text {
+			font-size: 12px;
+		}
+
+		.domain-text {
+			font-size: 14px;
+		}
+
+		.range-text text, .domain-text text{
+			fill: $color-dark-blue;
+		}
+
+		.tick line, .tick path {
+			stroke: $color-grey;
+		}
+
+	}
+
+	.chart-title {
+		font-family: 'Roboto', sans-serif;
+		font-size: 24px;
+		font-weight: bold;
+		fill: $color-dark-blue; // svg text uses fill, not color	
+	}
+
+	.notes {
+		font-family: 'Roboto', sans-serif;
+		font-size: 12px;
+		fill: $color-dark-blue; // svg text uses fill, not color		
+	}
+}
